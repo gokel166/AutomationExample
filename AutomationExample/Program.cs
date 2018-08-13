@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 
 namespace AutomationExample
 {
@@ -6,7 +7,21 @@ namespace AutomationExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int a = 15;
+            int b = 45;
+            
+            Console.WriteLine(AdditionFunc(a, b));
+            Console.ReadLine();
+        }
+
+        // Addition Function
+        public static int AdditionFunc(int a, int b)
+        {
+            int result = a + b;
+            return result;
         }
     }
+
+
+    
 }
