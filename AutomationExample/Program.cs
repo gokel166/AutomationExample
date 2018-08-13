@@ -1,27 +1,29 @@
 ﻿using System;
 using System.Net;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AutomationExample
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            int a = 15;
-            int b = 45;
-            
-            Console.WriteLine(AdditionFunc(a, b));
             Console.ReadLine();
         }
+    }
 
-        // Addition Function
-        public static int AdditionFunc(int a, int b)
+    public class MathExecute
+    {
+        public int AdditionFunction(int a, int b)
         {
             int result = a + b;
             return result;
         }
+
+        public int SubtractionFunction(int a, int b)
+        {
+            int result = a - b;
+            return result;
+        }
     }
-
-
-    
 }
